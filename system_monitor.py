@@ -6,6 +6,17 @@ from datetime import datetime
 OUTPUT_FILE = "system_metrics.csv"
 INTERVAL = 10  # seconds
 
+# limit numbers to 4 significant figures
+def format_number(num):
+    return float(f"{num:.4g}")
+
+# limit percentages to 2 significant figures
+def format_percent(num):
+    return float(f"{num:.2g}")
+
+# convert bytes to GB and limit to 4 significant figures
+def bytes_to_gb(num):
+    return float(f"{num / (1024**3):.4g}")
 
 def get_cpu_info():
     return {
@@ -14,7 +25,6 @@ def get_cpu_info():
         "load_avg_5": psutil.getloadavg()[1],
         "load_avg_15": psutil.getloadavg()[2]
     }
-
 
 def get_memory_info():
     mem = psutil.virtual_memory()
@@ -25,7 +35,6 @@ def get_memory_info():
         "memory_usage_percent": mem.percent
     }
 
-
 def get_disk_info():
     disk = psutil.disk_usage('/')
     return {
@@ -35,15 +44,13 @@ def get_disk_info():
         "disk_usage_percent": disk.percent
     }
 
-
 def get_uptime_info():
     boot_time = psutil.boot_time()
     uptime_seconds = time.time() - boot_time
     return {
         "system_uptime_seconds": int(uptime_seconds)
     }
-
-
+    
 def get_process_info():
     processes = list(psutil.process_iter(['pid', 'name', 'status', 'cpu_percent', 'memory_percent']))
 
@@ -60,7 +67,6 @@ def get_process_info():
         "top_cpu_processes": "; ".join([p.info['name'] for p in top_cpu]),
         "top_memory_processes": "; ".join([p.info['name'] for p in top_mem])
     }
-
 
 def main():
     header_written = False
