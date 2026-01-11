@@ -107,3 +107,39 @@ timestamp,cpu_usage_percent,load_avg_1,load_avg_5,load_avg_15,total_memory_gb,us
 2026-01-10 16:56:56,1.1,0.05127,0.2383,0.1577,3.825,1.868,1.956,49.0,24.44,7.267,15.9,31.0,9410.0,203,1,153,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
 2026-01-10 16:57:07,1.1,0.1904,0.2627,0.167,3.825,1.866,1.959,49.0,24.44,7.267,15.9,31.0,9421.0,203,1,153,Isolated Web Co; firefox; gnome-shell,Isolated Web Co; firefox; gnome-shell
 2026-01-10 16:57:18,1.6,0.1606,0.2539,0.165,3.825,1.866,1.959,49.0,24.44,7.267,15.9,31.0,9432.0,202,1,153,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
+timestamp,cpu_usage_percent,load_avg_1,load_avg_5,load_avg_15,total_memory_gb,used_memory_gb,available_memory_gb,memory_usage_percent,disk_total_gb,disk_used_gb,disk_free_gb,disk_usage_percent,system_uptime_seconds,total_processes,running_processes,sleeping_processes,top_cpu_processes,top_memory_processes
+2026-01-10 22:29:13,2.1,0.3599,0.3281,0.4185,3.825,1.976,1.849,52.0,24.44,8.413,14.76,36.0,29350.0,214,1,160,systemd; kthreadd; pool_workqueue_release,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:29:24,1.6,0.2793,0.3115,0.4111,3.825,1.977,1.848,52.0,24.44,8.413,14.76,36.0,29360.0,214,1,160,firefox; Isolated Web Co; gnome-shell,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:29:35,1.6,0.2358,0.3008,0.4062,3.825,1.977,1.848,52.0,24.44,8.413,14.76,36.0,29370.0,213,1,160,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:29:46,1.6,0.1992,0.29,0.4014,3.825,1.977,1.848,52.0,24.44,8.413,14.76,36.0,29380.0,213,1,160,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:29:57,1.1,0.168,0.2803,0.3965,3.825,1.977,1.848,52.0,24.44,8.413,14.76,36.0,29390.0,213,1,160,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:30:08,2.1,0.1416,0.2705,0.3916,3.825,1.979,1.846,52.0,24.44,8.413,14.76,36.0,29400.0,214,1,160,gnome-shell; Isolated Web Co; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:30:19,1.6,0.1094,0.2563,0.3843,3.825,1.979,1.846,52.0,24.44,8.413,14.76,36.0,29410.0,214,1,160,firefox; gnome-shell; Isolated Web Co,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:30:30,2.1,0.09229,0.2476,0.3794,3.825,1.978,1.847,52.0,24.44,8.413,14.76,36.0,29420.0,214,1,160,gnome-shell; Isolated Web Co; Privileged Cont,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:30:42,2.1,0.07764,0.2388,0.3745,3.825,1.978,1.847,52.0,24.44,8.413,14.76,36.0,29440.0,215,1,160,gnome-shell; Isolated Web Co; gnome-terminal-server,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:30:53,3.2,0.06543,0.2305,0.3696,3.825,1.976,1.849,52.0,24.44,8.413,14.76,36.0,29450.0,215,1,160,Isolated Web Co; gnome-shell; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:04,4.9,0.05518,0.2227,0.3647,3.825,1.938,1.887,51.0,24.44,8.413,14.76,36.0,29460.0,215,1,160,Isolated Web Co; gnome-shell; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:15,1.6,0.04199,0.2109,0.3584,3.825,1.938,1.887,51.0,24.44,8.413,14.76,36.0,29470.0,215,1,160,gnome-shell; Isolated Web Co; python3,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:26,3.7,0.03516,0.2031,0.3545,3.825,1.938,1.887,51.0,24.44,8.413,14.76,36.0,29480.0,215,1,160,firefox; Isolated Web Co; gnome-shell,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:37,1.6,0.0293,0.1963,0.3506,3.825,1.938,1.887,51.0,24.44,8.413,14.76,36.0,29490.0,215,1,160,gnome-shell; Isolated Web Co; gnome-terminal-server,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:48,1.6,0.02441,0.1895,0.3467,3.825,1.938,1.887,51.0,24.44,8.413,14.76,36.0,29500.0,215,1,160,Isolated Web Co; gnome-shell; firefox,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:31:59,11.0,0.02002,0.1826,0.3428,3.825,1.937,1.888,51.0,24.44,8.413,14.76,36.0,29510.0,215,1,160,Isolated Web Co; gnome-shell; gnome-terminal-server,Isolated Web Co; firefox; gnome-shell
+2026-01-10 22:32:10,3.2,0.4575,0.271,0.3691,3.825,2.027,1.798,53.0,24.44,8.413,14.76,36.0,29520.0,217,1,162,gnome-shell; gnome-terminal-server; kworker/u8:2-events_unbound,Isolated Web Co; firefox; gnome-shell
+timestamp,cpu_usage_percent,load_avg_1,load_avg_5,load_avg_15,total_memory_gb,used_memory_gb,available_memory_gb,memory_usage_percent,disk_total_gb,disk_used_gb,disk_free_gb,disk_usage_percent,system_uptime_seconds,total_processes,running_processes,sleeping_processes,top_cpu_processes,top_memory_processes
+2026-01-11 10:37:17,1.0,0.5557,0.5029,0.2173,3.825,0.9843,2.84,26.0,24.44,8.428,14.74,36.0,202.8,200,1,138,systemd; kthreadd; pool_workqueue_release,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:37:28,0.5,0.5503,0.5029,0.2202,3.825,0.9842,2.841,26.0,24.44,8.428,14.74,36.0,213.8,200,1,138,gnome-shell; kworker/u8:1-flush-8:0; upowerd,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:37:40,0.5,0.4653,0.4858,0.2173,3.825,0.9842,2.841,26.0,24.44,8.428,14.74,36.0,225.1,200,1,138,gnome-shell; kworker/0:1-events; python3,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:37:51,0.5,0.3931,0.4692,0.2144,3.825,0.9842,2.841,26.0,24.44,8.428,14.74,36.0,236.1,200,1,138,gnome-shell; kworker/0:1-events; kworker/1:1H-kblockd,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:02,0.5,0.3052,0.4458,0.21,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,247.1,200,1,138,gnome-shell; python3; kworker/0:1-events,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:13,0.0,0.2578,0.4307,0.207,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,258.2,200,1,138,gnome-shell; kworker/0:1-events; kworker/u8:1-flush-8:0,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:24,1.0,0.2178,0.416,0.2041,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,269.2,200,1,138,gnome-shell; kworker/0:1-events; python3,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:35,0.5,0.1841,0.4019,0.2012,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,280.3,200,1,138,gnome-shell; kworker/0:1-events; kworker/u8:5-flush-8:0,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:46,0.5,0.1426,0.3813,0.1968,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,291.3,200,1,138,gnome-shell; python3; kworker/0:1-events,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:38:57,0.0,0.1201,0.3687,0.1938,3.825,0.9844,2.84,26.0,24.44,8.428,14.74,36.0,302.5,200,1,138,gnome-shell; kworker/0:1-events; python3,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:39:08,1.0,0.1011,0.356,0.1909,3.825,0.9866,2.838,26.0,24.44,8.428,14.74,36.0,313.5,199,1,137,gnome-shell; systemd; kworker/0:1-events,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:39:19,0.5,0.4858,0.4272,0.2153,3.825,0.9852,2.84,26.0,24.44,8.428,14.74,36.0,324.6,200,1,138,snapd; gnome-shell; kworker/0:1-events,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:39:30,0.0,0.4106,0.4126,0.2124,3.825,0.9852,2.84,26.0,24.44,8.428,14.74,36.0,335.6,191,1,138,gnome-shell; kworker/0:1-events; rcu_preempt,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:39:41,0.5,0.3999,0.4087,0.2139,3.825,0.9852,2.84,26.0,24.44,8.428,14.74,36.0,346.6,192,1,138,gnome-shell; python3; kworker/0:1-events,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:39:52,0.5,0.3379,0.395,0.2109,3.825,0.9852,2.84,26.0,24.44,8.428,14.74,36.0,357.6,191,2,136,gnome-shell; kworker/0:1-events; gnome-terminal-server,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:40:03,0.5,0.2856,0.3813,0.208,3.825,0.9859,2.839,26.0,24.44,8.428,14.74,36.0,368.8,190,1,137,gnome-shell; kworker/0:1-events; kworker/u8:0-events_power_efficient,gnome-shell; gjs; evolution-alarm-notify
+2026-01-11 10:40:14,0.5,0.2412,0.3687,0.2051,3.825,0.9859,2.839,26.0,24.44,8.428,14.74,36.0,379.8,189,1,136,gnome-shell; kworker/0:1-events; gjs,gnome-shell; gjs; evolution-alarm-notify
