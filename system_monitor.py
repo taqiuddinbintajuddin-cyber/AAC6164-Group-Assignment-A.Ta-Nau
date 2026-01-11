@@ -20,31 +20,33 @@ def bytes_to_gb(num):
 
 # CPU Information
 def get_cpu_info():
+    cpu_percent = format_percent(psutil.cpu_percent(interval=1))
+    load1, load5, load15 = psutil.getloadavg()
     return {
-        "cpu_usage_percent": psutil.cpu_percent(interval=1),
-        "load_avg_1": psutil.getloadavg()[0],
-        "load_avg_5": psutil.getloadavg()[1],
-        "load_avg_15": psutil.getloadavg()[2]
+        "cpu_usage_percent": cpu_percent,
+        "load_avg_1": format_number(load1),
+        "load_avg_5": format_number(load5),
+        "load_avg_15": format_number(load15)
     }
-
+    
 # Memory Information
 def get_memory_info():
     mem = psutil.virtual_memory()
     return {
-        "total_memory": mem.total,
-        "used_memory": mem.used,
-        "available_memory": mem.available,
-        "memory_usage_percent": mem.percent
+        "total_memory_gb": bytes_to_gb(mem.total),
+        "used_memory_gb": bytes_to_gb(mem.used),
+        "available_memory_gb": bytes_to_gb(mem.available),
+        "memory_usage_percent": format_percent(mem.percent)
     }
 
 # Disk Information
 def get_disk_info():
     disk = psutil.disk_usage('/')
     return {
-        "disk_total": disk.total,
-        "disk_used": disk.used,
-        "disk_free": disk.free,
-        "disk_usage_percent": disk.percent
+        "disk_total_gb": bytes_to_gb(disk.total),
+        "disk_used_gb": bytes_to_gb(disk.used),
+        "disk_free_gb": bytes_to_gb(disk.free),
+        "disk_usage_percent": format_percent(disk.percent)
     }
 
 # Uptime Information
