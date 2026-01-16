@@ -53,17 +53,19 @@ def get_disk_info():
 def get_uptime_info():
     boot_time = psutil.boot_time()
     uptime_seconds = time.time() - boot_time
+    idle_seconds = psutil.cpu_times().idle
+
     return {
-        "system_uptime_seconds": int(uptime_seconds)
+        "system_uptime_seconds": int(uptime_seconds),
+        "cumulative_idle_seconds": int(idle_seconds)
     }
-    
+
 # Process Information
 def get_process_info():
     processes = list(psutil.process_iter(['pid', 'name', 'status', 'cpu_percent', 'memory_percent']))
 
     running = sum(1 for p in processes if p.info['status'] == psutil.STATUS_RUNNING)
     sleeping = sum(1 for p in processes if p.info['status'] == psutil.STATUS_SLEEPING)
-
     top_cpu = sorted(processes, key=lambda p: p.info['cpu_percent'], reverse=True)[:3]
     top_mem = sorted(processes, key=lambda p: p.info['memory_percent'], reverse=True)[:3]
 
