@@ -61,11 +61,7 @@ while True:
         if filename not in new_state:
             log_event(f"FILE DELETED: {filename} | Detection Time={time.ctime(time.time())}")
 
-<<<<<<< HEAD
     # FILE MODIFICATION (Table-style formatting) *CLEAN TO LOOK AT*
-=======
-        # FILE MODIFICATION (Table-style formatting) *CLEAN TO LOOK AT*
->>>>>>> 2697380f2979e5c3f01c993ee7b327ba971c8a13
     for filename, new_data in new_state.items():
         if filename in old_state:
             old_data = old_state[filename]
@@ -74,15 +70,6 @@ while True:
                 old_data["mtime"] != new_data["mtime"]):
 
                 # Table-style log *CLEAN TO LOOK AT*
-<<<<<<< HEAD
-                log_event(
-                    f"FILE MODIFIED: {filename}\n"
-                    f"{'Property':<12} {'Old':<20} {'New':<20}\n"
-                    f"{'-'*54}\n"
-                    f"{'Size':<12} {old_data['size']:<20} {new_data['size']:<20}\n"
-                    f"{'Perm':<12} {old_data['permissions']:<20} {new_data['permissions']:<20}\n"
-                    f"{'MTime':<12} {time.ctime(old_data['mtime']):<20} {time.ctime(new_data['mtime']):<20}\n"
-=======
                 # Table-style log including ALL mandatory metadata
                 log_event(
                     f"FILE MODIFIED: {filename}\n"
@@ -93,7 +80,6 @@ while True:
                     f"{'Type':<15} {old_data['type']:<25} {new_data['type']:<25}\n"
                     f"{'Modified':<15} {time.ctime(old_data['mtime']):<25} {time.ctime(new_data['mtime']):<25}\n"
                     f"{'Accessed':<15} {time.ctime(old_data['atime']):<25} {time.ctime(new_data['atime']):<25}\n"
->>>>>>> 2697380f2979e5c3f01c993ee7b327ba971c8a13
                 )
 
     # Update baseline
