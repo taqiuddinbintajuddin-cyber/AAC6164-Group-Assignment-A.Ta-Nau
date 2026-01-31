@@ -1,0 +1,2 @@
+FILE CREATED: untitled folder | Type=dir | Size=64 | Permissions=0o40755 | Owner=501 | Group=20 | Created=Fri Jan 30 21:53:40 2026
+FILE DELETED: untitled folder | Detection Time=Fri Jan 30 21:53:51 2026
